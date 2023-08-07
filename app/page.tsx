@@ -18,9 +18,7 @@ function HomePage() {
     setActiveButton(button);
   };
 
-  const handleGoHome = () => {
-    setActiveButton(null);
-  };
+  const handleGoHome = () => setActiveButton(null);
 
   return (
     <>
@@ -67,6 +65,15 @@ function HomePage() {
       {activeButton === "second" && <SecondButtonView />}
 
       {activeButton === "third" && <ThirdButtonView />}
+      {/* {activeButton !== null &&
+        activeButton !== "first" &&
+        activeButton !== "second" &&
+        activeButton !== "third" && (
+          <div>
+            <p>Unexpected state: {activeButton}</p>
+            <button onClick={handleGoHome}>Go Home</button>
+          </div>
+        )} */}
     </>
   );
 }
