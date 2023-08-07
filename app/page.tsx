@@ -1,6 +1,10 @@
 "use client";
 import React, { useState } from "react";
-import FirstButtonView from "./first-button-view/page";
+// Updated import statement for FirstButtonView
+import FirstButtonView, {
+  FirstButtonViewProps,
+} from "./first-button-view/page";
+
 import SecondButtonView from "./second-button-view/page";
 import ThirdButtonView from "./third-button-view/page";
 
@@ -65,15 +69,6 @@ function HomePage() {
       {activeButton === "second" && <SecondButtonView />}
 
       {activeButton === "third" && <ThirdButtonView />}
-      {/* {activeButton !== null &&
-        activeButton !== "first" &&
-        activeButton !== "second" &&
-        activeButton !== "third" && (
-          <div>
-            <p>Unexpected state: {activeButton}</p>
-            <button onClick={handleGoHome}>Go Home</button>
-          </div>
-        )} */}
     </>
   );
 }

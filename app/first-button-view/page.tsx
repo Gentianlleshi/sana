@@ -206,3 +206,5 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
 };
 
 export default FirstButtonView;
+
+export type { FirstButtonViewProps };
