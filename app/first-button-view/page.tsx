@@ -10,31 +10,31 @@ import InfoActive from "@/public/assets/icon-info-active.png";
 import Lek from "@/public/assets/lek-icon.png";
 import LekActive from "@/public/assets/lek-icon-active.png";
 
-// interface FirstButtonViewProps {
-//   onGoHome: () => void;
-// }
-
 enum TabOption {
   Option1 = "option1",
   Option2 = "option2",
   Option3 = "option3",
   Option4 = "option4",
 }
+interface FirstButtonViewProps {
+  onGoHome: () => void;
+}
 
-const FirstButtonView: React.FC = () => {
+const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
   const [activeTab, setActiveTab] = useState<TabOption>(TabOption.Option1);
-
   const handleTabClick = (tab: TabOption) => {
     setActiveTab(tab);
   };
-
   return (
     <div
       className={`first-view tab-${activeTab} font-Comfortaa h-screen w-full`}
     >
       <div className="menu backdrop-blur-[27px]">
         <nav className="flex h-[168px] items-center gap-[123px] container">
-          <button className="flex items-center gap-4 text-[30px] font-semibold">
+          <button
+            className="flex items-center gap-4 text-[30px] font-semibold"
+            onClick={onGoHome}
+          >
             <Image src={Logo} alt="logo" />
             <span>HOME</span>
           </button>
@@ -74,8 +74,8 @@ const FirstButtonView: React.FC = () => {
               <h2 className="text-6xl text-center text-[#0C2D19] font-semibold">
                 VALORE ECONOMICO
               </h2>
-              <div className="info-wrapper h-full w-full mt-9 border-[3px] border-[#89B00B] rounded-se-[125px] rounded-es-[125px]">
-                <ul className="grid grid-cols-2">
+              <div className="info-wrapper w-full mt-9 border-[3px] border-[#89B00B] rounded-se-[125px] rounded-es-[125px]">
+                <ul className="grid grid-cols-2 my-[64px] mx-[124px]">
                   <li>
                     <h3 className="text-[43px] text-[#A8C29E]">
                       13,3 MLD di euro
@@ -204,6 +204,5 @@ const FirstButtonView: React.FC = () => {
   );
 };
 
+// export { TabOption, FirstButtonView };
 export default FirstButtonView;
-
-// export type { FirstButtonViewProps };

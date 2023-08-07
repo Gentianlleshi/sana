@@ -1,15 +1,13 @@
 "use client";
 import { useState } from "react";
-// Updated import statement for FirstButtonView
-import FirstButtonView from "./first-button-view/page"; // FirstButtonViewProps,
+import Image from "next/image";
 
+import FirstButtonView from "./first-button-view/page";
 import SecondButtonView from "./second-button-view/page";
 import ThirdButtonView from "./third-button-view/page";
 
-// import Logo2 from "@/assets/logo2.png";
 import Logo2 from "@/public/assets/logo2.png";
 import Logo3 from "@/public/assets/logo3.png";
-import Image from "next/image";
 
 type ButtonType = "first" | "second" | "third";
 
@@ -19,9 +17,6 @@ function HomePage() {
   const handleButtonClick = (button: ButtonType) => {
     setActiveButton(button);
   };
-
-  const handleGoHome = () => setActiveButton(null);
-
   return (
     <>
       {activeButton === null && (
@@ -62,7 +57,20 @@ function HomePage() {
         </div>
       )}
 
-      {activeButton === "first" && <FirstButtonView />}
+      {/* {activeButton === "first" && (
+        <FirstButtonView onGoHome={() => setActiveButton(null)} />
+      )}
+
+      {activeButton === "second" && (
+        <SecondButtonView onGoHome={() => setActiveButton(null)} />
+      )}
+
+      {activeButton === "third" && (
+        <ThirdButtonView onGoHome={() => setActiveButton(null)} />
+      )} */}
+      {activeButton === "first" && (
+        <FirstButtonView onGoHome={() => setActiveButton(null)} />
+      )}
 
       {activeButton === "second" && <SecondButtonView />}
 
