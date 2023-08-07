@@ -1,9 +1,7 @@
 "use client";
 import { useState } from "react";
 // Updated import statement for FirstButtonView
-import FirstButtonView, {
-  FirstButtonViewProps,
-} from "./first-button-view/page";
+import FirstButtonView from "./first-button-view/page"; // FirstButtonViewProps,
 
 import SecondButtonView from "./second-button-view/page";
 import ThirdButtonView from "./third-button-view/page";
@@ -64,7 +62,7 @@ function HomePage() {
         </div>
       )}
 
-      {activeButton === "first" && <FirstButtonView onGoHome={handleGoHome} />}
+      {activeButton === "first" && <FirstButtonView />}
 
       {activeButton === "second" && <SecondButtonView />}
 

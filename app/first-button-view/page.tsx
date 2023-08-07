@@ -10,9 +10,9 @@ import InfoActive from "@/public/assets/icon-info-active.png";
 import Lek from "@/public/assets/lek-icon.png";
 import LekActive from "@/public/assets/lek-icon-active.png";
 
-interface FirstButtonViewProps {
-  onGoHome: () => void;
-}
+// interface FirstButtonViewProps {
+//   onGoHome: () => void;
+// }
 
 enum TabOption {
   Option1 = "option1",
@@ -21,7 +21,7 @@ enum TabOption {
   Option4 = "option4",
 }
 
-const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
+const FirstButtonView: React.FC = () => {
   const [activeTab, setActiveTab] = useState<TabOption>(TabOption.Option1);
 
   const handleTabClick = (tab: TabOption) => {
@@ -209,4 +209,4 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
 
 export default FirstButtonView;
 
-export type { FirstButtonViewProps };
+// export type { FirstButtonViewProps };
