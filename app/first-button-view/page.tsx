@@ -34,10 +34,7 @@ const FirstButtonView: React.FC = () => {
     >
       <div className="menu backdrop-blur-[27px]">
         <nav className="flex h-[168px] items-center gap-[123px] container">
-          <button
-            className="flex items-center gap-4 text-[30px] font-semibold"
-            onClick={onGoHome}
-          >
+          <button className="flex items-center gap-4 text-[30px] font-semibold">
             <Image src={Logo} alt="logo" />
             <span>HOME</span>
           </button>
