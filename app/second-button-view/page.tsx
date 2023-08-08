@@ -1,3 +1,4 @@
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import Logo from "@/public/assets/logo.png";
@@ -48,6 +49,10 @@ const SecondButtonView: React.FC<SecondButtonViewProps> = ({ onGoHome }) => {
   const handleButtonClick = (button: ButtonType) => {
     setActiveButton(button);
   };
+  const handleGoBack = () => {
+    setActiveButton(null); // Reset activeButton to return to the main view
+  };
+
   // Add your tab-based view with 4 options here
   return (
     <div className="second-view font-Comfortaa h-screen w-full">
@@ -183,7 +188,9 @@ const SecondButtonView: React.FC<SecondButtonViewProps> = ({ onGoHome }) => {
           </div>
         </div>
       )}
-      {activeButton === "camomilla" && <CamomillaButtonView />}
+      {activeButton === "camomilla" && (
+        <CamomillaButtonView onGoBack={handleGoBack} />
+      )}
       {activeButton === "equiseto" && <EquisetoButtonView />}
       {activeButton === "ginkgo" && <GinkgoButtonView />}
       {activeButton === "verde" && <VerdeButtonView />}
