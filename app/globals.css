@@ -36,3 +36,33 @@ body {
   background-image: url(/assets/view-button-2.png);
   background-repeat: no-repeat;
 }
+.first-view.tab-option3 {
+  background-image: url(/assets/view-button-3.svg);
+  background-repeat: no-repeat;
+}
+.first-view.tab-option4 {
+  background-image: url(/assets/view-button-4.svg);
+  background-repeat: no-repeat;
+}
+
+.second-view {
+  background-image: url(/assets/natura.png);
+  background-repeat: no-repeat;
+}
+
+/* SimpleSlider.css */
+
+.simple-slider {
+  max-width: 800px; /* Set the desired maximum width */
+  margin: 0 auto;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px; /* Set the desired slide height */
+  background-color: #f0f0f0;
+  border: 1px solid #ccc;
+  font-size: 24px;
+}

@@ -29,7 +29,7 @@ function HomePage() {
           </div>
           <div className="button-wrapper h-[calc(100vh-168px)] flex flex-wrap items-center justify-evenly text-6xl text-white">
             <button
-              className="w-[750px] h-[342px] bg-[#0A2B18] rounded-ss-[125px] rounded-se-[125px]"
+              className="w-[38.45%] h-[342px] bg-[#0A2B18] rounded-ss-[125px] rounded-se-[125px]"
               onClick={() => handleButtonClick("first")}
             >
               <h2>
@@ -37,7 +37,7 @@ function HomePage() {
               </h2>
             </button>
             <button
-              className="w-[750px] h-[342px] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
+              className="w-[38.45%] h-[342px] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
               onClick={() => handleButtonClick("second")}
             >
               <h2>
@@ -45,7 +45,7 @@ function HomePage() {
               </h2>
             </button>
             <button
-              className="w-[750px] h-[342px] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
+              className="w-[38.45%] h-[342px] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
               onClick={() => handleButtonClick("third")}
             >
               <h2>COSMILE EUROPE</h2>
@@ -57,22 +57,12 @@ function HomePage() {
         </div>
       )}
 
-      {/* {activeButton === "first" && (
-        <FirstButtonView onGoHome={() => setActiveButton(null)} />
-      )}
-
-      {activeButton === "second" && (
-        <SecondButtonView onGoHome={() => setActiveButton(null)} />
-      )}
-
-      {activeButton === "third" && (
-        <ThirdButtonView onGoHome={() => setActiveButton(null)} />
-      )} */}
       {activeButton === "first" && (
         <FirstButtonView onGoHome={() => setActiveButton(null)} />
       )}
-
-      {activeButton === "second" && <SecondButtonView />}
+      {activeButton === "second" && (
+        <SecondButtonView onGoHome={() => setActiveButton(null)} />
+      )}
 
       {activeButton === "third" && <ThirdButtonView />}
     </>

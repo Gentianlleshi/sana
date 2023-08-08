@@ -1,0 +1,57 @@
+<svg id="Group_117" data-name="Group 117" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="365" height="1080" viewBox="0 0 365 1080">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_72" data-name="Rectangle 72" width="365" height="1080" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="Rectangle_71" data-name="Rectangle 71" width="365" height="1080" fill="#db2b2e"/>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <rect id="Rectangle_64" data-name="Rectangle 64" width="61" height="1080" transform="translate(76)" fill="#b7c19b"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <rect id="Rectangle_66" data-name="Rectangle 66" width="61" height="1080" transform="translate(152)" fill="#b7c19b"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <rect id="Rectangle_68" data-name="Rectangle 68" width="61" height="1080" transform="translate(228)" fill="#b7c19b"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <rect id="Rectangle_70" data-name="Rectangle 70" width="61" height="1080" transform="translate(304)" fill="#b7c19b"/>
+    </clipPath>
+  </defs>
+  <g id="Group_116" data-name="Group 116" clip-path="url(#clip-path)">
+    <path id="Path_42" data-name="Path 42" d="M0,0H61V1080H0Z" fill="#b7c19b"/>
+    <g id="Group_115" data-name="Group 115">
+      <g id="Group_114" data-name="Group 114" clip-path="url(#clip-path-2)">
+        <g id="Group_104" data-name="Group 104" opacity="0.7">
+          <g id="Group_103" data-name="Group 103">
+            <g id="Group_102" data-name="Group 102" clip-path="url(#clip-path-3)">
+              <rect id="Rectangle_63" data-name="Rectangle 63" width="61" height="1080" transform="translate(76)" fill="#b7c19b"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_107" data-name="Group 107" opacity="0.4">
+          <g id="Group_106" data-name="Group 106">
+            <g id="Group_105" data-name="Group 105" clip-path="url(#clip-path-4)">
+              <rect id="Rectangle_65" data-name="Rectangle 65" width="61" height="1080" transform="translate(152)" fill="#b7c19b"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_110" data-name="Group 110" opacity="0.2">
+          <g id="Group_109" data-name="Group 109">
+            <g id="Group_108" data-name="Group 108" clip-path="url(#clip-path-5)">
+              <rect id="Rectangle_67" data-name="Rectangle 67" width="61" height="1080" transform="translate(228)" fill="#b7c19b"/>
+            </g>
+          </g>
+        </g>
+        <g id="Group_113" data-name="Group 113" opacity="0.05">
+          <g id="Group_112" data-name="Group 112">
+            <g id="Group_111" data-name="Group 111" clip-path="url(#clip-path-6)">
+              <rect id="Rectangle_69" data-name="Rectangle 69" width="61" height="1080" transform="translate(304)" fill="#b7c19b"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>
