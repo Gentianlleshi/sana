@@ -21,10 +21,9 @@ enum TabOption {
   Option3 = "option3",
   Option4 = "option4",
 }
-interface FirstButtonViewProps {
+export interface FirstButtonViewProps {
   onGoHome: () => void;
 }
-
 const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
   const [activeTab, setActiveTab] = useState<TabOption>(TabOption.Option1);
   const handleTabClick = (tab: TabOption) => {

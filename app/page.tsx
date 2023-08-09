@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
+import { FirstButtonViewProps } from "@/app/first-button-view/page"; // Update the path accordingly
 
 import FirstButtonView from "./first-button-view/page";
 import SecondButtonView from "./second-button-view/page";
