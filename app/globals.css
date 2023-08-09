@@ -17,6 +17,11 @@
     --background-end-rgb: 0, 0, 0;
   }
 }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
 
 body {
   min-height: 100vh;
@@ -27,7 +32,11 @@ body {
   width: 100%;
   background-repeat: no-repeat;
 }
-
+.first-view .tab-wrapper .tabs button img {
+  width: 8.3vh;
+  height: 8.3vh;
+  object-fit: contain;
+}
 .first-view.tab-option1 {
   background-image: url(/assets/view-button-1.png);
   background-repeat: no-repeat;
@@ -35,25 +44,78 @@ body {
 .first-view.tab-option2 {
   background-image: url(/assets/view-button-2.png);
   background-repeat: no-repeat;
+  background-size: 19vw 100%;
 }
 .first-view.tab-option3 {
-  background-image: url(/assets/view-button-3.svg);
+  background-image: url(/assets/view-button-3.png);
   background-repeat: no-repeat;
+  background-size: 19vw 100%;
+}
+.first-view.tab-option3 .center img {
+  width: 22vh;
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: auto 1/1;
 }
 .first-view.tab-option4 {
-  background-image: url(/assets/view-button-4.svg);
+  background-image: url(/assets/view-button-4.png);
   background-repeat: no-repeat;
+  background-size: 19vw 100%;
 }
 
 .second-view {
   background-image: url(/assets/natura.png);
   background-repeat: no-repeat;
 }
+.second-view .button-wrapper ul li button img {
+  height: 11.198vw;
+  width: auto;
+  object-fit: cover;
+  aspect-ratio: auto 1/1;
+}
+.camomilla-view {
+  background-image: url(/assets/colors/camomilla-bg.png);
+  background-repeat: no-repeat;
+  background-color: #fffdf2;
+  background-size: 19vw 100%;
+}
+.equiseto-view {
+  background-image: url(/assets/colors/equiseto-bg.png);
+  background-repeat: no-repeat;
+  background-color: #f4f7f2;
+  background-size: 19vw 100%;
+}
 
-/* SimpleSlider.css */
+.ginkgo-view {
+  background-image: url(/assets/colors/ginkgo-bg.png);
+  background-repeat: no-repeat;
+  background-color: #eef3e4;
+  background-size: 19vw 100%;
+}
+
+.verde-view {
+  background-image: url(/assets/colors/ver-bg.png);
+  background-repeat: no-repeat;
+  background-color: #f9ffeb;
+  background-size: 19vw 100%;
+}
+
+.olivo-view {
+  background-image: url(/assets/colors/olivo-bg.png);
+  background-repeat: no-repeat;
+  background-color: #fdffea;
+  background-size: 19vw 100%;
+}
+
+.mirtillo-view {
+  background-image: url(/assets/colors/mirtillo-bg.png);
+  background-repeat: no-repeat;
+  background-color: #f3f5fc;
+  background-size: 19vw 100%;
+}
 
 .simple-slider {
-  max-width: 800px; /* Set the desired maximum width */
+  max-width: 800px;
   margin: 0 auto;
 }
 
@@ -61,7 +123,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 300px; /* Set the desired slide height */
+  height: 300px;
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   font-size: 24px;

@@ -31,6 +31,7 @@ import Zenzero from "@/public/assets/colors/zenzero.png";
 
 interface SecondButtonViewProps {
   onGoHome: () => void;
+  onGoBack: () => void;
 }
 type ButtonType =
   | "camomilla"
@@ -44,164 +45,195 @@ type ButtonType =
   | "tiglio"
   | "uvarossa"
   | "zenzero";
-const SecondButtonView: React.FC<SecondButtonViewProps> = ({ onGoHome }) => {
+const SecondButtonView: React.FC<SecondButtonViewProps> = ({
+  onGoHome,
+  onGoBack,
+}) => {
   const [activeButton, setActiveButton] = useState<ButtonType | null>(null);
   const handleButtonClick = (button: ButtonType) => {
     setActiveButton(button);
   };
   const handleGoBack = () => {
-    setActiveButton(null); // Reset activeButton to return to the main view
+    setActiveButton(null);
+  };
+  const handleGoHome = () => {
+    onGoHome();
   };
 
-  // Add your tab-based view with 4 options here
   return (
-    <div className="second-view font-Comfortaa h-screen w-full">
-      <div className="menu backdrop-blur-[27px]">
-        <nav className="flex h-[168px] items-center gap-[123px] container">
-          <button
-            className="flex items-center gap-4 text-[30px] font-semibold"
-            onClick={onGoHome}
-          >
-            <Image src={Logo} alt="logo" />
-            <span>HOME</span>
-          </button>
-          <Image src={Logo2} alt="logo2" />
-          <Image src={Logo3} alt="logo3" />
-        </nav>
-      </div>
+    <>
       {activeButton === null && (
-        <div className="font-Comfortaa ml-[6.464%] flex gap-x-[50px]">
-          <div className="headers-wrap flex flex-col justify-center relative">
-            <div>
-              <h2 className="text-[60px] text-white font-semibold drop-shadow-[0_5px_10px_rgba(0,0,0,0.16)] absolute top-[10%] w-[550px] leading-[72px]">
-                GLI INGREDIENTI <br /> DALLA NATURA
-              </h2>
-            </div>
-            <div>
-              <h3 className="font-light text-[40px] text-[#0A2B17] leading-[39px]">
-                Scegli un colore <br />
-                <span className="font-bold text-[44px] text-[#0A2B17]">
-                  e scopri di più
-                </span>
-              </h3>
-              <Image src={Pointer} alt="pointer" className="ml-auto" />
-            </div>
-            <div></div>
+        <div className="second-view font-Comfortaa h-screen w-full">
+          <div className="menu backdrop-blur-[27px]">
+            <nav className="flex h-[168px] items-center gap-[123px] container">
+              <button
+                className="flex items-center gap-4 text-[30px] font-semibold"
+                onClick={onGoHome}
+              >
+                <Image src={Logo} alt="logo" />
+                <span>HOME</span>
+              </button>
+              <Image src={Logo2} alt="logo2" />
+              <Image src={Logo3} alt="logo3" />
+            </nav>
           </div>
-          <div className="button-wrapper h-[calc(100vh-168px)] flex items-center">
-            <div className=" grid gap-y-[30px]">
-              <ul className="flex gap-x-6 justify-center h-[215px]">
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("camomilla")}
-                  >
-                    <Image src={Camomilla} alt="camomilla" />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("equiseto")}
-                  >
-                    <Image src={Equiseto} alt="equiseto" />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("ginkgo")}
-                  >
-                    <Image src={Ginkgo} alt="ginkgo" />
-                  </button>
-                </li>
-              </ul>
-              <ul className="flex gap-x-6 justify-center h-[215px]">
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("verde")}
-                  >
-                    <Image src={Verde} alt="verde" />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("olivo")}
-                  >
-                    <Image src={Olivo} alt="olivo" />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("mirtillo")}
-                  >
-                    <Image src={Mirtillo} alt="mirtillo" />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("ibisco")}
-                  >
-                    <Image src={Ibisco} alt="ibisco" />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("goji")}
-                  >
-                    <Image src={Goji} alt="goji" />
-                  </button>
-                </li>
-              </ul>
-              <ul className="flex gap-x-6 justify-center h-[215px]">
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("tiglio")}
-                  >
-                    <Image src={Tiglio} alt="tiglio" />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("uvarossa")}
-                  >
-                    <Image src={Uvarossa} alt="uvarossa" />
-                  </button>
-                </li>
-                <li>
-                  <button
-                    className=""
-                    onClick={() => handleButtonClick("zenzero")}
-                  >
-                    <Image src={Zenzero} alt="zenzero" />
-                  </button>
-                </li>
-              </ul>
+
+          <div className="font-Comfortaa ml-[6.464%] flex gap-x-[50px]">
+            <div className="headers-wrap flex flex-col justify-center relative">
+              <div>
+                <h2
+                  className="text-[3.15vw] text-white font-semibold
+                 drop-shadow-[0_5px_10px_rgba(0,0,0,0.16)] absolute
+                 top-[10%] w-[550px] leading-[6.7vh]"
+                >
+                  GLI INGREDIENTI <br /> DALLA NATURA
+                </h2>
+              </div>
+              <div>
+                <h3 className="font-light text-[2.1vw] text-[#0A2B17] leading-[3.5vh]">
+                  Scegli un colore <br />
+                  <span className="font-bold text-[2.3vw] text-[#0A2B17]">
+                    e scopri di più
+                  </span>
+                </h3>
+                <Image src={Pointer} alt="pointer" className="ml-auto mt-3" />
+              </div>
+            </div>
+            <div className="button-wrapper h-[calc(100vh-168px)] flex items-center">
+              <div className=" grid gap-y-[30px]">
+                <ul className="flex gap-x-6 justify-center h-[11.198vw]">
+                  <li>
+                    <button
+                      className=""
+                      onClick={() => handleButtonClick("camomilla")}
+                    >
+                      <Image src={Camomilla} alt="camomilla" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className=""
+                      onClick={() => handleButtonClick("equiseto")}
+                    >
+                      <Image src={Equiseto} alt="equiseto" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className=""
+                      onClick={() => handleButtonClick("ginkgo")}
+                    >
+                      <Image src={Ginkgo} alt="ginkgo" />
+                    </button>
+                  </li>
+                </ul>
+                <ul className="flex gap-x-6 justify-center items-center h-[11.198vw]">
+                  <li>
+                    <button
+                      className="h-[11.198vw]"
+                      onClick={() => handleButtonClick("verde")}
+                    >
+                      <Image src={Verde} alt="verde" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className=""
+                      onClick={() => handleButtonClick("olivo")}
+                    >
+                      <Image src={Olivo} alt="olivo" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className=""
+                      onClick={() => handleButtonClick("mirtillo")}
+                    >
+                      <Image src={Mirtillo} alt="mirtillo" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className=""
+                      onClick={() => handleButtonClick("ibisco")}
+                    >
+                      <Image src={Ibisco} alt="ibisco" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className="h-[11.198vw]"
+                      onClick={() => handleButtonClick("goji")}
+                    >
+                      <Image src={Goji} alt="goji" />
+                    </button>
+                  </li>
+                </ul>
+                <ul className="flex gap-x-6 justify-center h-[11.198vw]">
+                  <li>
+                    <button
+                      className=""
+                      onClick={() => handleButtonClick("tiglio")}
+                    >
+                      <Image src={Tiglio} alt="tiglio" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className=""
+                      onClick={() => handleButtonClick("uvarossa")}
+                    >
+                      <Image src={Uvarossa} alt="uvarossa" />
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      className=""
+                      onClick={() => handleButtonClick("zenzero")}
+                    >
+                      <Image src={Zenzero} alt="zenzero" />
+                    </button>
+                  </li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
       )}
       {activeButton === "camomilla" && (
-        <CamomillaButtonView onGoBack={handleGoBack} />
+        <CamomillaButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
       )}
-      {activeButton === "equiseto" && <EquisetoButtonView />}
-      {activeButton === "ginkgo" && <GinkgoButtonView />}
-      {activeButton === "verde" && <VerdeButtonView />}
-      {activeButton === "olivo" && <OlivoButtonView />}
-      {activeButton === "mirtillo" && <MirtilloButtonView />}
-      {activeButton === "ibisco" && <IbiscoButtonView />}
-      {activeButton === "goji" && <GojiButtonView />}
-      {activeButton === "tiglio" && <TiglioButtonView />}
-      {activeButton === "uvarossa" && <UvarossaButtonView />}
-      {activeButton === "zenzero" && <ZenzeroButtonView />}
-    </div>
+      {activeButton === "equiseto" && (
+        <EquisetoButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
+      )}
+      {activeButton === "ginkgo" && (
+        <GinkgoButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
+      )}
+      {activeButton === "verde" && (
+        <VerdeButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
+      )}
+      {activeButton === "olivo" && (
+        <OlivoButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
+      )}
+      {activeButton === "mirtillo" && (
+        <MirtilloButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
+      )}
+      {activeButton === "ibisco" && (
+        <IbiscoButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
+      )}
+      {activeButton === "goji" && (
+        <GojiButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
+      )}
+      {activeButton === "tiglio" && (
+        <TiglioButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
+      )}
+      {activeButton === "uvarossa" && (
+        <UvarossaButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
+      )}
+      {activeButton === "zenzero" && (
+        <ZenzeroButtonView onGoBack={handleGoBack} onGoHome={handleGoHome} />
+      )}
+    </>
   );
 };
 export default SecondButtonView;

@@ -17,6 +17,13 @@ function HomePage() {
   const handleButtonClick = (button: ButtonType) => {
     setActiveButton(button);
   };
+  const handleGoBack = () => {
+    setActiveButton(null); // Reset activeButton to return to the previous view
+  };
+
+  const handleGoHome = () => {
+    setActiveButton(null); // Reset activeButton to return to the main view
+  };
   return (
     <>
       {activeButton === null && (
@@ -27,9 +34,9 @@ function HomePage() {
               <Image src={Logo3} alt="logo3" />
             </nav>
           </div>
-          <div className="button-wrapper h-[calc(100vh-168px)] flex flex-wrap items-center justify-evenly text-6xl text-white">
+          <div className="button-wrapper h-[calc(100vh-168px)] flex flex-wrap items-center justify-evenly text-[3.15vw] text-white leading-[6.7vh]">
             <button
-              className="w-[38.45%] h-[342px] bg-[#0A2B18] rounded-ss-[125px] rounded-se-[125px]"
+              className="w-[38.45%] h-[37.5%] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
               onClick={() => handleButtonClick("first")}
             >
               <h2>
@@ -37,7 +44,7 @@ function HomePage() {
               </h2>
             </button>
             <button
-              className="w-[38.45%] h-[342px] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
+              className="w-[38.45%] h-[37.5%] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
               onClick={() => handleButtonClick("second")}
             >
               <h2>
@@ -45,11 +52,11 @@ function HomePage() {
               </h2>
             </button>
             <button
-              className="w-[38.45%] h-[342px] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
+              className="w-[38.45%] h-[37.5%] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
               onClick={() => handleButtonClick("third")}
             >
               <h2>COSMILE EUROPE</h2>
-              <h3 className="text-[#ABC692] text-[35px] mt-4">
+              <h3 className="text-[#ABC692] text-[1.825vw] leading-[2.2vw] mt-4">
                 IL DATABASE SUGLI <br /> INGREDIENTI COSMETICI
               </h3>
             </button>
@@ -61,7 +68,10 @@ function HomePage() {
         <FirstButtonView onGoHome={() => setActiveButton(null)} />
       )}
       {activeButton === "second" && (
-        <SecondButtonView onGoHome={() => setActiveButton(null)} />
+        <SecondButtonView
+          onGoHome={() => setActiveButton(null)}
+          onGoBack={() => setActiveButton(null)}
+        />
       )}
 
       {activeButton === "third" && <ThirdButtonView />}
