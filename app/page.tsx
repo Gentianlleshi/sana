@@ -5,7 +5,7 @@ import Image from "next/image";
 import FirstButtonView from "./first-button-view/page";
 import SecondButtonView from "./second-button-view/page";
 import ThirdButtonView from "./third-button-view/page";
-
+import Logo from "@/public/assets/logo.png";
 import Logo2 from "@/public/assets/logo2.png";
 import Logo3 from "@/public/assets/logo3.png";
 
@@ -29,7 +29,11 @@ function HomePage() {
       {activeButton === null && (
         <div className="main-view font-Comfortaa">
           <div className="menu backdrop-blur-[50px]">
-            <nav className="flex h-[168px] justify-center items-center gap-[123px] container">
+            <nav className="flex h-[168px] items-center gap-[123px] container">
+              <button className="flex items-center gap-4 text-[30px] font-semibold">
+                <Image src={Logo} alt="logo" />
+                <span>HOME</span>
+              </button>
               <Image src={Logo2} height={78} width={475} alt="logo2" />
               <Image src={Logo3} alt="logo3" />
             </nav>

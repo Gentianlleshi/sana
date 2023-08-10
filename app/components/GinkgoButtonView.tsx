@@ -33,7 +33,7 @@ const GinkgoButtonView: React.FC<GoToSecondButtonViewProps> = ({
         <div className="tab-content h-full flex-[0_0_85%]">
           <div className="content-wrapper h-full ml-[30%] flex flex-col justify-center">
             <div className="flex items-center justify-between ml-[100px]">
-              <h2 className="text-6xl text-center text-[#89B00C] font-semibold">
+              <h2 className="text-[3.15vw] text-center text-[#89B00C] font-semibold">
                 GINKGO BILOBA
               </h2>
               <button
@@ -52,7 +52,7 @@ const GinkgoButtonView: React.FC<GoToSecondButtonViewProps> = ({
                 <div className="flex flex-col justify-center leading-[40px]">
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white pb-[14px]">
                     <h3 className="text-white">Parte della pianta usata</h3>
-                    <h3 className="text-[#0A2B18]">FIORE</h3>
+                    <h3 className="text-[#0A2B18]">FOGLIA</h3>
                   </div>
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white py-[14px]">
                     <h3 className="text-white">Tecnica di estrazione</h3>
@@ -64,7 +64,7 @@ const GinkgoButtonView: React.FC<GoToSecondButtonViewProps> = ({
                   </div>
                   <div className="text-[1.8vw] font-semibold px-[20px] pt-[14px]">
                     <h3 className="text-white">Funzionalità cosmetica</h3>
-                    <h3 className="text-[#0A2B18]">DISARROSSANTE</h3>
+                    <h3 className="text-[#0A2B18]">VASOPROTETTORE</h3>
                   </div>
                 </div>
               </div>

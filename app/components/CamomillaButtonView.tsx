@@ -33,7 +33,7 @@ const CamomillaButtonView: React.FC<GoToSecondButtonViewProps> = ({
         <div className="tab-content h-full flex-[0_0_85%]">
           <div className="content-wrapper h-full ml-[30%] flex flex-col justify-center">
             <div className="flex items-center justify-between ml-[100px]">
-              <h2 className="text-6xl text-center text-[#FFCB02] font-semibold">
+              <h2 className="text-[3.15vw] text-center text-[#FFCB02] font-semibold">
                 CAMOMILLA
               </h2>
               <button

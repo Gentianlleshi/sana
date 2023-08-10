@@ -33,8 +33,8 @@ const EquisetoButtonView: React.FC<GoToSecondButtonViewProps> = ({
         <div className="tab-content h-full flex-[0_0_85%]">
           <div className="content-wrapper h-full ml-[30%] flex flex-col justify-center">
             <div className="flex items-center justify-between ml-[100px]">
-              <h2 className="text-6xl text-center text-[#26660E] font-semibold">
-                EQUISETO
+              <h2 className="text-[3.15vw] text-center text-[#26660E] font-semibold">
+                IBISCO
               </h2>
               <button
                 onClick={onGoBack}
@@ -52,7 +52,7 @@ const EquisetoButtonView: React.FC<GoToSecondButtonViewProps> = ({
                 <div className="flex flex-col justify-center leading-[40px]">
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white pb-[14px]">
                     <h3 className="text-white">Parte della pianta usata</h3>
-                    <h3 className="text-[#0A2B18]">FIORE</h3>
+                    <h3 className="text-[#0A2B18]">PARTE AEREA</h3>
                   </div>
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white py-[14px]">
                     <h3 className="text-white">Tecnica di estrazione</h3>
@@ -60,11 +60,11 @@ const EquisetoButtonView: React.FC<GoToSecondButtonViewProps> = ({
                   </div>
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white py-[14px]">
                     <h3 className="text-white">Principio attivo</h3>
-                    <h3 className="text-[#0A2B18]">FLAVONOIDI</h3>
+                    <h3 className="text-[#0A2B18]">SALI MINERALI</h3>
                   </div>
                   <div className="text-[1.8vw] font-semibold px-[20px] pt-[14px]">
                     <h3 className="text-white">Funzionalità cosmetica</h3>
-                    <h3 className="text-[#0A2B18]">DISARROSSANTE</h3>
+                    <h3 className="text-[#0A2B18]">RIMINERALIZZANTE</h3>
                   </div>
                 </div>
               </div>

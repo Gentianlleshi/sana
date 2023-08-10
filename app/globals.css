@@ -32,6 +32,13 @@ body {
   width: 100%;
   background-repeat: no-repeat;
 }
+.main-view nav button {
+  opacity: 0;
+  pointer-events: none;
+}
+.menu {
+  background: rgba(255, 255, 255, 0.4);
+}
 .first-view .tab-wrapper .tabs button img {
   width: 8.3vh;
   height: 8.3vh;
@@ -114,7 +121,37 @@ body {
   background-size: 19vw 100%;
 }
 
-.simple-slider {
+.ibisco-view {
+  background-image: url(/assets/colors/ibisco-bg.png);
+  background-repeat: no-repeat;
+  background-color: #ffe0de;
+  background-size: 19vw 100%;
+}
+.goji-view {
+  background-image: url(/assets/colors/goji-bg.png);
+  background-repeat: no-repeat;
+  background-color: #e9e6d8;
+  background-size: 19vw 100%;
+}
+.tiglio-view {
+  background-image: url(/assets/colors/tiglio-bg.png);
+  background-repeat: no-repeat;
+  background-color: #f5f5f5;
+  background-size: 19vw 100%;
+}
+.uvarossa-view {
+  background-image: url(/assets/colors/uvarossa-bg.png);
+  background-repeat: no-repeat;
+  background-color: #f4effa;
+  background-size: 19vw 100%;
+}
+.zenzero-view {
+  background-image: url(/assets/colors/zenzero-bg.png);
+  background-repeat: no-repeat;
+  background-color: #fff7ef;
+  background-size: 19vw 100%;
+}
+/* .simple-slider {
   max-width: 800px;
   margin: 0 auto;
 }
@@ -127,4 +164,61 @@ body {
   background-color: #f0f0f0;
   border: 1px solid #ccc;
   font-size: 24px;
+} */
+.slide img {
+  height: 46.85vh;
+}
+
+.slick-prev {
+  left: -72px !important;
+}
+.slick-next {
+  right: -72px !important;
+}
+.slick-prev,
+.slick-next {
+  width: 52px !important;
+  height: 52px !important;
+}
+.slick-prev:before {
+  content: "" !important;
+  background-image: url(/assets/slides/arrow-p.png) !important;
+  background-repeat: no-repeat;
+  background-size: 52px 52px;
+  background-position: center center;
+  display: block;
+  height: 52px;
+  width: 52px;
+}
+.slick-next:before {
+  content: "" !important;
+  background-image: url(/assets/slides/arrow-n.png) !important;
+  background-repeat: no-repeat;
+  background-size: 52px 52px;
+  background-position: center center;
+  display: block;
+  height: 52px;
+  width: 52px;
+}
+ul.slick-dots {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+.slick-dots {
+  bottom: -55px !important;
+}
+.slick-dots li button {
+  width: 38px !important;
+  height: 38px !important;
+}
+.slick-dots li button:before {
+  content: "" !important;
+  width: 38px !important;
+  height: 38px !important;
+  border: 1px solid #000;
+  border-radius: 50%;
+}
+.slick-dots li.slick-active button:before {
+  background-color: #000;
 }

@@ -33,7 +33,7 @@ const VerdeButtonView: React.FC<GoToSecondButtonViewProps> = ({
         <div className="tab-content h-full flex-[0_0_85%]">
           <div className="content-wrapper h-full ml-[30%] flex flex-col justify-center">
             <div className="flex items-center justify-between ml-[100px]">
-              <h2 className="text-6xl text-center text-[#26660E] font-semibold">
+              <h2 className="text-[3.15vw] text-center text-[#26660E] font-semibold">
                 TÈ VERDE
               </h2>
               <button
@@ -45,14 +45,14 @@ const VerdeButtonView: React.FC<GoToSecondButtonViewProps> = ({
               </button>
             </div>
             <div className="info-wrapper w-full mt-9 rounded-ss-[128px] rounded-ee-[128px] overflow-hidden">
-              <div className="flex gap-x-[31px] bg-[#0A6E00]">
+              <div className="flex gap-x-[31px] bg-[#CAD9CA]">
                 <div>
                   <Image src={VerImg} alt="camomilla-img" />
                 </div>
                 <div className="flex flex-col justify-center leading-[40px]">
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white pb-[14px]">
                     <h3 className="text-white">Parte della pianta usata</h3>
-                    <h3 className="text-[#0A6E00]">FIORE</h3>
+                    <h3 className="text-[#0A6E00]">FOGLIA</h3>
                   </div>
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white py-[14px]">
                     <h3 className="text-white">Tecnica di estrazione</h3>
@@ -60,11 +60,11 @@ const VerdeButtonView: React.FC<GoToSecondButtonViewProps> = ({
                   </div>
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white py-[14px]">
                     <h3 className="text-white">Principio attivo</h3>
-                    <h3 className="text-[#0A6E00]">FLAVONOIDI</h3>
+                    <h3 className="text-[#0A6E00]">POLIFENOLI</h3>
                   </div>
                   <div className="text-[1.8vw] font-semibold px-[20px] pt-[14px]">
                     <h3 className="text-white">Funzionalità cosmetica</h3>
-                    <h3 className="text-[#0A6E00]">DISARROSSANTE</h3>
+                    <h3 className="text-[#0A6E00]">ANTIOSSIDANTE</h3>
                   </div>
                 </div>
               </div>
