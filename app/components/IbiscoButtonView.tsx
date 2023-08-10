@@ -47,7 +47,7 @@ const IbiscoButtonView: React.FC<GoToSecondButtonViewProps> = ({
             <div className="info-wrapper w-full mt-9 rounded-ss-[128px] rounded-ee-[128px] overflow-hidden">
               <div className="flex gap-x-[31px] bg-[#62914f]">
                 <div>
-                  <Image src={EquImg} alt="camomilla-img" />
+                  <Image src={CamImg} alt="camomilla-img" />
                 </div>
                 <div className="flex flex-col justify-center leading-[40px]">
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white pb-[14px]">

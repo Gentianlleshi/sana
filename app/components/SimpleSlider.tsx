@@ -21,7 +21,10 @@ const SimpleSlider: React.FC<SimpleSliderProps> = ({ slides }) => {
     <div className="simple-slider">
       <Slider {...settings}>
         {slides.map((slide, index) => (
-          <div key={index} className="slide">
+          <div
+            key={index}
+            className="slide rounded-ss-[128px] rounded-ee-[128px] overflow-hidden"
+          >
             {slide}
           </div>
         ))}

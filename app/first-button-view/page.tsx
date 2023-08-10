@@ -14,27 +14,31 @@ import LekActive from "@/public/assets/lek-icon-active.png";
 import SciActive from "@/public/assets/sciAct.svg";
 import SocActive from "@/public/assets/icon-soc-active.svg";
 import SimpleSlider from "../components/SimpleSlider";
-
+import Slides from "@/app/components/SlidesContent";
 enum TabOption {
   Option1 = "option1",
   Option2 = "option2",
   Option3 = "option3",
   Option4 = "option4",
 }
-export interface FirstButtonViewProps {
+interface FirstButtonViewProps {
   onGoHome: () => void;
 }
+
 const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
+  const handleGoHome = () => {
+    onGoHome();
+  };
   const [activeTab, setActiveTab] = useState<TabOption>(TabOption.Option1);
   const handleTabClick = (tab: TabOption) => {
     setActiveTab(tab);
   };
-  const slides = [
-    <div>Slide 1 Content</div>,
-    <div>Slide 2 Content</div>,
-    <div>Slide 3 Content</div>,
-    <div>Slide 4 Content</div>,
-  ];
+  // const slides = [
+  //   <div>Slide 1 Content</div>,
+  //   <div>Slide 2 Content</div>,
+  //   <div>Slide 3 Content</div>,
+  //   <div>Slide 4 Content</div>,
+  // ];
   return (
     <div
       className={`first-view tab-${activeTab} font-Comfortaa h-screen w-full`}
@@ -43,7 +47,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
         <nav className="flex h-[168px] items-center gap-[123px] container">
           <button
             className="flex items-center gap-4 text-[30px] font-semibold"
-            onClick={onGoHome}
+            onClick={handleGoHome}
           >
             <Image src={Logo} alt="logo" />
             <span>HOME</span>
@@ -224,7 +228,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
               <h2 className="text-[3.15vw] text-center text-[#0C2D19] font-semibold drop-shadow-[0_5px_10px_rgba(0,0,0,0.16)]">
                 VALORE SOCIALE
               </h2>
-              <SimpleSlider slides={slides} />
+              <SimpleSlider slides={Slides} />
             </div>
           )}
         </div>
@@ -310,5 +314,4 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
   );
 };
 
-// export { TabOption, FirstButtonView };
 export default FirstButtonView;

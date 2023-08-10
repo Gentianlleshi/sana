@@ -1,7 +1,6 @@
 "use client";
 import { useState } from "react";
 import Image from "next/image";
-import { FirstButtonViewProps } from "@/app/first-button-view/page"; // Update the path accordingly
 
 import FirstButtonView from "./first-button-view/page";
 import SecondButtonView from "./second-button-view/page";
@@ -65,16 +64,13 @@ function HomePage() {
         </div>
       )}
 
-      {activeButton === "first" && (
-        <FirstButtonView onGoHome={() => setActiveButton(null)} />
-      )}
+      {activeButton === "first" && <FirstButtonView onGoHome={handleGoHome} />}
       {activeButton === "second" && (
         <SecondButtonView
           onGoHome={() => setActiveButton(null)}
           onGoBack={() => setActiveButton(null)}
         />
       )}
-
       {activeButton === "third" && <ThirdButtonView />}
     </>
   );
