@@ -34,7 +34,13 @@ function HomePage() {
                 <Image src={Logo} alt="logo" />
                 <span>HOME</span>
               </button>
-              <Image src={Logo2} height={78} width={475} alt="logo2" />
+              <Image
+                src={Logo2}
+                height={78}
+                width={475}
+                alt="logo2"
+                loading="eager"
+              />
               <Image src={Logo3} alt="logo3" />
             </nav>
           </div>
