@@ -65,16 +65,16 @@ const SecondButtonView: React.FC<SecondButtonViewProps> = ({
       {activeButton === null && (
         <div className="second-view font-Comfortaa h-screen w-full">
           <div className="menu backdrop-blur-[27px]">
-            <nav className="flex h-[168px] items-center gap-[10vw] mx-[10vw]">
+            <nav className="flex h-[18vh] items-center gap-[10vw] mx-[10vw]">
               <button
                 className="flex items-center gap-4 text-[30px] font-semibold"
                 onClick={onGoHome}
               >
-                <Image src={Logo} alt="logo" />
+                <Image src={Logo} alt="logo" className="portrait:m-w-[7vw]" />
                 <span className="text-[1.56vw]">HOME</span>
               </button>
-              <Image src={Logo2} alt="logo2" />
-              <Image src={Logo3} alt="logo3" />
+              <Image src={Logo2} alt="logo2" className="portrait:m-w-[25vw]" />
+              <Image src={Logo3} alt="logo3" className="portrait:m-w-[15vw]" />
             </nav>
           </div>
 
@@ -99,7 +99,7 @@ const SecondButtonView: React.FC<SecondButtonViewProps> = ({
                 <Image src={Pointer} alt="pointer" className="ml-auto mt-3" />
               </div>
             </div>
-            <div className="button-wrapper h-[calc(100vh-168px)] flex items-center">
+            <div className="button-wrapper h-[calc(100vh-18vh)] flex items-center">
               <div className=" grid gap-y-[30px]">
                 <ul className="flex gap-x-6 justify-center h-[11.198vw]">
                   <li>

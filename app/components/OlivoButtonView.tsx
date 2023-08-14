@@ -17,7 +17,7 @@ const OlivoButtonView: React.FC<GoToSecondButtonViewProps> = ({
   return (
     <div className="olivo-view font-Comfortaa h-screen w-full">
       <div className="menu backdrop-blur-[27px]">
-        <nav className="flex h-[168px] items-center gap-[10vw] mx-[10vw]">
+        <nav className="flex h-[18vh] items-center gap-[10vw] mx-[10vw]">
           <button
             className="flex items-center gap-4 text-[30px] font-semibold"
             onClick={onGoHome}
@@ -29,7 +29,7 @@ const OlivoButtonView: React.FC<GoToSecondButtonViewProps> = ({
           <Image src={Logo3} alt="logo3" />
         </nav>
       </div>
-      <div className="flex  h-[calc(100vh-168px)] items-center">
+      <div className="flex  h-[calc(100vh-18vh)] items-center">
         <div className="tab-content h-full flex-[0_0_85%]">
           <div className="content-wrapper h-full ml-[30%] flex flex-col justify-center">
             <div className="flex items-center justify-between ml-[100px]">

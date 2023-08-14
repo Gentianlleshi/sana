@@ -38,7 +38,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
       className={`first-view tab-${activeTab} font-Comfortaa h-screen w-full`}
     >
       <div className="menu backdrop-blur-[27px]">
-        <nav className="flex h-[168px] items-center gap-[10vw] mx-[10vw]">
+        <nav className="flex h-[18vh] items-center gap-[10vw] mx-[10vw]">
           <button
             className="flex items-center gap-4 text-[30px] font-semibold"
             onClick={handleGoHome}
@@ -50,7 +50,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
           <Image src={Logo3} alt="logo3" />
         </nav>
       </div>
-      <div className="first-view-content flex  h-[calc(100vh-168px)] items-center">
+      <div className="first-view-content flex  h-[calc(100vh-18vh)] items-center">
         <div className="tab-content h-full flex-[0_0_80%] flex justify-center">
           {activeTab === TabOption.Option1 && (
             <div className="content-wrapper flex justify-evenly h-full items-center text-center font-semibold">

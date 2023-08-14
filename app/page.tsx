@@ -29,7 +29,7 @@ function HomePage() {
       {activeButton === null && (
         <div className="main-view font-Comfortaa">
           <div className="menu backdrop-blur-[50px]">
-            <nav className="flex h-[168px] items-center gap-[10vw] mx-[10vw]">
+            <nav className="flex h-[18vh] items-center gap-[10vw] mx-[10vw]">
               <button className="flex items-center gap-4 text-[30px] font-semibold">
                 <Image src={Logo} alt="logo" />
                 <span className="text-[1.56vw]">HOME</span>
@@ -44,7 +44,7 @@ function HomePage() {
               <Image src={Logo3} alt="logo3" />
             </nav>
           </div>
-          <div className="button-wrapper h-[calc(100vh-168px)] flex flex-wrap items-center justify-evenly text-[3.15vw] text-white leading-[6.7vh]">
+          <div className="button-wrapper h-[calc(100vh-18vh)] flex flex-wrap items-center justify-evenly text-[3.15vw] text-white leading-[6.7vh]">
             <button
               className="w-[38.45%] h-[37.5%] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
               onClick={() => handleButtonClick("first")}
