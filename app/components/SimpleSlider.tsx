@@ -18,7 +18,7 @@ const SimpleSlider: React.FC<SimpleSliderProps> = ({ slides }) => {
     // centerPadding: "5px",
   };
   return (
-    <div className="simple-slider h-[539px] w-[56.67vw]">
+    <div className="simple-slider portrait:h-[85%] portrait:flex portrait:flex-col portrait:justify-center h-[539px] w-[56.67vw]">
       <Slider {...settings} className="">
         {slides.map((slide, index) => (
           <div

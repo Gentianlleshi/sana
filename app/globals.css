@@ -31,6 +31,7 @@ body {
   height: 100vh;
   width: 100%;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .main-view nav button {
   opacity: 0;
@@ -40,13 +41,14 @@ body {
   background: rgba(255, 255, 255, 0.4);
 }
 .first-view .tab-wrapper .tabs button img {
-  width: 8.3vh;
+  width: 8.3vw;
   height: 8.3vh;
   object-fit: contain;
 }
 .first-view.tab-option1 {
   background-image: url(/assets/view-button-1.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .first-view.tab-option2 {
   background-image: url(/assets/view-button-2.png);
@@ -73,6 +75,7 @@ body {
 .second-view {
   background-image: url(/assets/natura.png);
   background-repeat: no-repeat;
+  background-size: cover;
 }
 .second-view .button-wrapper ul li button img {
   height: 11.198vw;
@@ -194,6 +197,7 @@ body {
   height: 52px;
   width: 52px;
 }
+
 ul.slick-dots {
   display: flex !important;
   justify-content: center;
@@ -215,4 +219,15 @@ ul.slick-dots {
 }
 .slick-dots li.slick-active button:before {
   background-color: #000;
+}
+@media (orientation: portrait) {
+  .slide img {
+    height: 35vh;
+  }
+  button.slick-prev {
+    left: -55px !important;
+  }
+  button.slick-next {
+    right: -55px !important;
+  }
 }

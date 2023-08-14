@@ -17,13 +17,13 @@ const IbiscoButtonView: React.FC<GoToSecondButtonViewProps> = ({
   return (
     <div className="ibisco-view font-Comfortaa h-screen w-full">
       <div className="menu backdrop-blur-[27px]">
-        <nav className="flex h-[168px] items-center gap-[123px] container">
+        <nav className="flex h-[168px] items-center gap-[10vw] mx-[10vw]">
           <button
             className="flex items-center gap-4 text-[30px] font-semibold"
             onClick={onGoHome}
           >
             <Image src={Logo} alt="logo" />
-            <span>HOME</span>
+            <span className="text-[1.56vw]">HOME</span>
           </button>
           <Image src={Logo2} alt="logo2" />
           <Image src={Logo3} alt="logo3" />
@@ -45,11 +45,11 @@ const IbiscoButtonView: React.FC<GoToSecondButtonViewProps> = ({
               </button>
             </div>
             <div className="info-wrapper w-full mt-9 rounded-ss-[128px] rounded-ee-[128px] overflow-hidden">
-              <div className="flex gap-x-[31px] bg-[#FD7A73]">
+              <div className="flex gap-x-[31px] bg-[#FD7A73] portrait:gap-x-[20px]">
                 <div>
                   <Image src={IbiImg} alt="camomilla-img" />
                 </div>
-                <div className="flex flex-col justify-center leading-[40px]">
+                <div className="flex flex-col justify-center leading-[2vw] portrait:m-[20px] portrait:ml-0">
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white pb-[14px]">
                     <h3 className="text-white">Parte della pianta usata</h3>
                     <h3 className="text-[#0A2B18]">FIORE</h3>

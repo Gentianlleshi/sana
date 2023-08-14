@@ -65,13 +65,13 @@ const SecondButtonView: React.FC<SecondButtonViewProps> = ({
       {activeButton === null && (
         <div className="second-view font-Comfortaa h-screen w-full">
           <div className="menu backdrop-blur-[27px]">
-            <nav className="flex h-[168px] items-center gap-[123px] container">
+            <nav className="flex h-[168px] items-center gap-[10vw] mx-[10vw]">
               <button
                 className="flex items-center gap-4 text-[30px] font-semibold"
                 onClick={onGoHome}
               >
                 <Image src={Logo} alt="logo" />
-                <span>HOME</span>
+                <span className="text-[1.56vw]">HOME</span>
               </button>
               <Image src={Logo2} alt="logo2" />
               <Image src={Logo3} alt="logo3" />
@@ -84,7 +84,7 @@ const SecondButtonView: React.FC<SecondButtonViewProps> = ({
                 <h2
                   className="text-[3.15vw] text-white font-semibold
                  drop-shadow-[0_5px_10px_rgba(0,0,0,0.16)] absolute
-                 top-[10%] w-[550px] leading-[6.7vh]"
+                 top-[10%] w-[29vw] leading-[6.7vh]"
                 >
                   GLI INGREDIENTI <br /> DALLA NATURA
                 </h2>

@@ -33,31 +33,25 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
   const handleTabClick = (tab: TabOption) => {
     setActiveTab(tab);
   };
-  // const slides = [
-  //   <div>Slide 1 Content</div>,
-  //   <div>Slide 2 Content</div>,
-  //   <div>Slide 3 Content</div>,
-  //   <div>Slide 4 Content</div>,
-  // ];
   return (
     <div
       className={`first-view tab-${activeTab} font-Comfortaa h-screen w-full`}
     >
       <div className="menu backdrop-blur-[27px]">
-        <nav className="flex h-[168px] items-center gap-[123px] container">
+        <nav className="flex h-[168px] items-center gap-[10vw] mx-[10vw]">
           <button
             className="flex items-center gap-4 text-[30px] font-semibold"
             onClick={handleGoHome}
           >
             <Image src={Logo} alt="logo" />
-            <span>HOME</span>
+            <span className="text-[1.56vw]">HOME</span>
           </button>
           <Image src={Logo2} alt="logo2" />
           <Image src={Logo3} alt="logo3" />
         </nav>
       </div>
       <div className="first-view-content flex  h-[calc(100vh-168px)] items-center">
-        <div className="tab-content h-full flex-[0_0_85%]">
+        <div className="tab-content h-full flex-[0_0_80%] flex justify-center">
           {activeTab === TabOption.Option1 && (
             <div className="content-wrapper flex justify-evenly h-full items-center text-center font-semibold">
               <div className="max-w-[32.709vw]">
@@ -84,7 +78,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
             </div>
           )}
           {activeTab === TabOption.Option2 && (
-            <div className="content-wrapper h-full ml-[25%]">
+            <div className="content-wrapper h-full ml-[25%] portrait:ml-[23%] portrait:mr-[2%] portrait:flex portrait:flex-col portrait:justify-center">
               <h2 className="text-[3.15vw] text-center text-[#0C2D19] font-semibold drop-shadow-[0_5px_10px_rgba(0,0,0,0.16)]">
                 VALORE ECONOMICO
               </h2>
@@ -158,7 +152,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
             </div>
           )}
           {activeTab === TabOption.Option3 && (
-            <div className="content-wrapper h-full ml-[25%]">
+            <div className="content-wrapper h-full ml-[25%] portrait:ml-[23%] portrait:mr-[2%] portrait:flex portrait:flex-col portrait:justify-center">
               <h2 className="text-[3.15vw] text-center text-[#0C2D19] font-semibold drop-shadow-[0_5px_10px_rgba(0,0,0,0.16)]">
                 VALORE SCIENTIFICO
               </h2>
@@ -194,7 +188,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
                       alt="PROFESSIONALITÀ"
                     />
                   </div>
-                  <div className="right flex-[40%] flex flex-col gap-[8.8vh]">
+                  <div className="right flex-[40%] flex flex-col gap-[8.8vh] portrait:gap-[6.8vh]">
                     <div className="ml-5">
                       <h3 className="text-[2.25vw] text-[#6B75A0] font-bold">
                         INNOVAZIONE
@@ -224,7 +218,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
             </div>
           )}
           {activeTab === TabOption.Option4 && (
-            <div className="ml-[25%]">
+            <div className="portrait:ml-[8vw] ml-[25%]">
               <h2 className="text-[3.15vw] text-center text-[#0C2D19] font-semibold drop-shadow-[0_5px_10px_rgba(0,0,0,0.16)]">
                 VALORE SOCIALE
               </h2>
@@ -232,8 +226,8 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
             </div>
           )}
         </div>
-        <div className="tab-wrapper flex-[0_0_15%] h-full py-5">
-          <div className="tabs bg-[#F4F7F2] flex flex-col h-full items-center justify-between w-[10.313vw] mx-auto rounded-[120px] px-5 py-9 font-bold text-[26px] shadow-[0_3px_46px_rgba(0,0,0,0.16)]">
+        <div className="tab-wrapper flex-[0_0_20%] h-full py-5">
+          <div className="tabs bg-[#F4F7F2] flex flex-col h-full items-center justify-between w-[16vh] mx-auto rounded-[120px] px-5 py-9 font-bold text-[26px] shadow-[0_3px_46px_rgba(0,0,0,0.16)]">
             <button
               onClick={() => handleTabClick(TabOption.Option1)}
               className={

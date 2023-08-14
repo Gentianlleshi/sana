@@ -29,10 +29,10 @@ function HomePage() {
       {activeButton === null && (
         <div className="main-view font-Comfortaa">
           <div className="menu backdrop-blur-[50px]">
-            <nav className="flex h-[168px] items-center gap-[123px] container">
+            <nav className="flex h-[168px] items-center gap-[10vw] mx-[10vw]">
               <button className="flex items-center gap-4 text-[30px] font-semibold">
                 <Image src={Logo} alt="logo" />
-                <span>HOME</span>
+                <span className="text-[1.56vw]">HOME</span>
               </button>
               <Image
                 src={Logo2}
