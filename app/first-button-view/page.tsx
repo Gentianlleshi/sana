@@ -11,7 +11,9 @@ import Info from "@/public/assets/icon-info.png";
 import InfoActive from "@/public/assets/icon-info-active.png";
 import Lek from "@/public/assets/lek-icon.png";
 import LekActive from "@/public/assets/lek-icon-active.png";
+import Sci from "@/public/assets/sci.svg";
 import SciActive from "@/public/assets/sciAct.svg";
+import Val from "@/public/assets/val.svg";
 import SocActive from "@/public/assets/icon-soc-active.svg";
 import SimpleSlider from "../components/SimpleSlider";
 import Slides from "@/app/components/SlidesContent";
@@ -274,7 +276,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
               }
             >
               <Image
-                src={activeTab === TabOption.Option3 ? SciActive : Info}
+                src={activeTab === TabOption.Option3 ? SciActive : Val}
                 alt="scientific"
                 width={90}
                 height={90}
@@ -292,7 +294,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
               }
             >
               <Image
-                src={activeTab === TabOption.Option4 ? SocActive : Info}
+                src={activeTab === TabOption.Option4 ? SocActive : Sci}
                 alt="Info"
                 width={90}
                 height={90}
