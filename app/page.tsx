@@ -68,7 +68,9 @@ function HomePage() {
             </button>
             <button
               className="w-[38.45%] h-[37.5%] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
-              onClick={() => handleButtonClick("third")}
+              onClick={() =>
+                window.open("https://cosmileeurope.eu/inci/", "_blank")
+              }
             >
               <h2>COSMILE EUROPE</h2>
               <h3 className="text-[#ABC692] text-[1.825vw] leading-[2.2vw] mt-4">
@@ -86,7 +88,7 @@ function HomePage() {
           onGoBack={() => setActiveButton(null)}
         />
       )}
-      {activeButton === "third" && <ThirdButtonView />}
+      {/* {activeButton === "third" && <ThirdButtonView />} */}
     </>
   );
 }
