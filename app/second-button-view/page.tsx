@@ -23,7 +23,7 @@ import Ginkgo from "@/public/assets/colors/ginkgo.png";
 import Verde from "@/public/assets/colors/verde.svg";
 import Olivo from "@/public/assets/colors/olivo.png";
 import Mirtillo from "@/public/assets/colors/mirtillo.png";
-import Goji from "@/public/assets/colors/goji.svg";
+import Goji from "@/public/assets/colors/GOJI.svg";
 import Ibisco from "@/public/assets/colors/ibisco.png";
 import Tiglio from "@/public/assets/colors/tiglio.png";
 import Uvarossa from "@/public/assets/colors/uvarossa.png";
