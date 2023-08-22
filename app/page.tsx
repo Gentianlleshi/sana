@@ -7,7 +7,7 @@ import SecondButtonView from "./second-button-view/page";
 import ThirdButtonView from "./third-button-view/page";
 import Logo from "@/public/assets/logo.png";
 import Logo2 from "@/public/assets/logo2.png";
-import Logo3 from "@/public/assets/logo3.png";
+import Logo3 from "@/public/assets/logo3.svg";
 
 type ButtonType = "first" | "second" | "third";
 
@@ -30,8 +30,8 @@ function HomePage() {
         <div className="main-view font-Comfortaa">
           <div className="menu backdrop-blur-[50px]">
             <nav className="flex h-[18vh] items-center gap-[10vw] mx-[10vw]">
-              <button className="flex items-center gap-4 text-[30px] font-semibold">
-                <Image src={Logo} alt="logo" />
+              <button className="flex items-center gap-4 text-[1.56vw] font-semibold">
+                <Image src={Logo} alt="logo" className="portrait:max-w-[7vw]" />
                 <span className="text-[1.56vw]">HOME</span>
               </button>
               <Image
@@ -40,8 +40,13 @@ function HomePage() {
                 width={475}
                 alt="logo2"
                 loading="eager"
+                className="portrait:max-w-[25vw]"
               />
-              <Image src={Logo3} alt="logo3" />
+              <Image
+                src={Logo3}
+                alt="logo3"
+                className="portrait:max-w-[15vw]"
+              />
             </nav>
           </div>
           <div className="button-wrapper h-[calc(100vh-18vh)] flex flex-wrap items-center justify-evenly text-[3.15vw] text-white leading-[6.7vh]">

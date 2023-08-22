@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Logo from "@/public/assets/logo.png";
 import Logo2 from "@/public/assets/logo2.png";
-import Logo3 from "@/public/assets/logo3.png";
+import Logo3 from "@/public/assets/logo3.svg";
 import CamomillaButtonView from "../components/CamomillaButtonView";
 import EquisetoButtonView from "../components/EquisetoButtonView";
 import GinkgoButtonView from "../components/GinkgoButtonView";
@@ -20,11 +20,11 @@ import Pointer from "@/public/assets/ponter.png";
 import Camomilla from "@/public/assets/colors/camomilla.png";
 import Equiseto from "@/public/assets/colors/equiseto.png";
 import Ginkgo from "@/public/assets/colors/ginkgo.png";
-import Verde from "@/public/assets/colors/verde.png";
+import Verde from "@/public/assets/colors/verde.svg";
 import Olivo from "@/public/assets/colors/olivo.png";
 import Mirtillo from "@/public/assets/colors/mirtillo.png";
 import Goji from "@/public/assets/colors/goji.png";
-import Ibisco from "@/public/assets/colors/ibisco.png";
+import Ibisco from "@/public/assets/colors/ibisco.svg";
 import Tiglio from "@/public/assets/colors/tiglio.png";
 import Uvarossa from "@/public/assets/colors/uvarossa.png";
 import Zenzero from "@/public/assets/colors/zenzero.png";
@@ -67,14 +67,22 @@ const SecondButtonView: React.FC<SecondButtonViewProps> = ({
           <div className="menu backdrop-blur-[27px]">
             <nav className="flex h-[18vh] items-center gap-[10vw] mx-[10vw]">
               <button
-                className="flex items-center gap-4 text-[30px] font-semibold"
+                className="flex items-center gap-4 text-[1.56vw] font-semibold"
                 onClick={onGoHome}
               >
-                <Image src={Logo} alt="logo" className="portrait:m-w-[7vw]" />
+                <Image src={Logo} alt="logo" className="portrait:max-w-[7vw]" />
                 <span className="text-[1.56vw]">HOME</span>
               </button>
-              <Image src={Logo2} alt="logo2" className="portrait:m-w-[25vw]" />
-              <Image src={Logo3} alt="logo3" className="portrait:m-w-[15vw]" />
+              <Image
+                src={Logo2}
+                alt="logo2"
+                className="portrait:max-w-[25vw]"
+              />
+              <Image
+                src={Logo3}
+                alt="logo3"
+                className="portrait:max-w-[15vw]"
+              />
             </nav>
           </div>
 

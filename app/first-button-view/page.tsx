@@ -4,7 +4,7 @@ import { useState } from "react";
 import Image from "next/image";
 import Logo from "@/public/assets/logo.png";
 import Logo2 from "@/public/assets/logo2.png";
-import Logo3 from "@/public/assets/logo3.png";
+import Logo3 from "@/public/assets/logo3.svg";
 import SciCenter from "@/public/assets/sciCenter.svg";
 // tabs icons
 import Info from "@/public/assets/icon-info.png";
@@ -40,14 +40,14 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
       <div className="menu backdrop-blur-[27px]">
         <nav className="flex h-[18vh] items-center gap-[10vw] mx-[10vw]">
           <button
-            className="flex items-center gap-4 text-[30px] font-semibold"
+            className="flex items-center gap-4 text-[1.56vw] font-semibold"
             onClick={handleGoHome}
           >
-            <Image src={Logo} alt="logo" />
+            <Image src={Logo} alt="logo" className="portrait:max-w-[7vw]" />
             <span className="text-[1.56vw]">HOME</span>
           </button>
-          <Image src={Logo2} alt="logo2" />
-          <Image src={Logo3} alt="logo3" />
+          <Image src={Logo2} alt="logo2" className="portrait:max-w-[25vw]" />
+          <Image src={Logo3} alt="logo3" className="portrait:max-w-[15vw]" />
         </nav>
       </div>
       <div className="first-view-content flex  h-[calc(100vh-18vh)] items-center">

@@ -3,7 +3,7 @@ import GoBack from "@/public/assets/colors/goback.png";
 
 import Logo from "@/public/assets/logo.png";
 import Logo2 from "@/public/assets/logo2.png";
-import Logo3 from "@/public/assets/logo3.png";
+import Logo3 from "@/public/assets/logo3.svg";
 
 import TigImg from "@/public/assets/colors/tiglio-img.png";
 interface GoToSecondButtonViewProps {
@@ -19,20 +19,20 @@ const TiglioButtonView: React.FC<GoToSecondButtonViewProps> = ({
       <div className="menu backdrop-blur-[27px]">
         <nav className="flex h-[18vh] items-center gap-[10vw] mx-[10vw]">
           <button
-            className="flex items-center gap-4 text-[30px] font-semibold"
+            className="flex items-center gap-4 text-[1.56vw] font-semibold"
             onClick={onGoHome}
           >
-            <Image src={Logo} alt="logo" />
+            <Image src={Logo} alt="logo" className="portrait:max-w-[7vw]" />
             <span className="text-[1.56vw]">HOME</span>
           </button>
-          <Image src={Logo2} alt="logo2" />
-          <Image src={Logo3} alt="logo3" />
+          <Image src={Logo2} alt="logo2" className="portrait:max-w-[25vw]" />
+          <Image src={Logo3} alt="logo3" className="portrait:max-w-[15vw]" />
         </nav>
       </div>
       <div className="flex  h-[calc(100vh-18vh)] items-center">
         <div className="tab-content h-full flex-[0_0_85%]">
           <div className="content-wrapper h-full ml-[30%] flex flex-col justify-center">
-            <div className="flex items-center justify-between ml-[100px]">
+            <div className="flex items-center justify-between ml-[5vw]">
               <h2 className="text-[3.15vw] text-center text-[#B7C19B] font-semibold">
                 TIGLIO
               </h2>
@@ -41,7 +41,7 @@ const TiglioButtonView: React.FC<GoToSecondButtonViewProps> = ({
                 className="flex items-center gap-x-[13px]"
               >
                 <Image src={GoBack} alt="go back" />
-                <span className="text-[#0A2B17] text-[30px]">indietro</span>
+                <span className="text-[#0A2B17] text-[1.56vw]">indietro</span>
               </button>
             </div>
             <div className="info-wrapper w-full mt-9 rounded-ss-[128px] rounded-ee-[128px] overflow-hidden">
