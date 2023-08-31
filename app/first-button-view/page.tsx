@@ -69,7 +69,6 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
               <div className="max-w-[32.709vw]">
                 <h3 className="text-[2.09vw]">GRUPPO COSMETICI ERBORISTERIA</h3>
                 <p className="text-[1.56vw] mt-4">
-                  Nel testo su GCEr modificare leggermente il testo come segue:
                   Il Gruppo Cosmetici Erboristeria di Cosmetica Italia riunisce
                   oltre 60 aziende che storicamente hanno identificato
                   l’erboristeria come canale distributivo, ma soprattutto
