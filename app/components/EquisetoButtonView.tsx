@@ -34,7 +34,7 @@ const EquisetoButtonView: React.FC<GoToSecondButtonViewProps> = ({
           <div className="content-wrapper h-full ml-[30%] flex flex-col justify-center">
             <div className="flex items-center justify-between ml-[5vw]">
               <h2 className="text-[3.15vw] text-center text-[#26660E] font-semibold">
-                IBISCO
+                EQUISETO
               </h2>
               <button
                 onClick={onGoBack}

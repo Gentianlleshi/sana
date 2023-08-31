@@ -126,7 +126,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
                         67%
                       </h3>
                       <p className="text-[#0A2B18] text-[1.42vw] font-semibold tracking-[-2px]  leading-[1.78vw]">
-                        Make-up italiano consumato nel mondo 25,1 MLD di euro
+                        Make-up italiano consumato in Europa
                       </p>
                     </li>
                     <li className="mt-4">
@@ -140,7 +140,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
                     </li>
                     <li className="mt-4">
                       <h3 className="text-[2.25vw] text-[#A8C29E] font-bold leading-[5.6vh]">
-                        22,3 MLD di euro
+                        25,1 MLD di euro
                       </h3>
                       <p className="text-[#0A2B18] text-[1.42vw] font-semibold tracking-[-2px]  leading-[1.78vw]">
                         Ricchezza socio-economica generata dal sistema della
@@ -164,7 +164,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
                       <h3 className="text-[2.25vw] text-[#6B75A0] font-bold">
                         PROFESSIONALITÀ
                       </h3>
-                      <p className="text-[#0A2B18] text-[1.35vw] font-bold tracking-[-2px]  leading-[1.78vw">
+                      <p className="text-[#0A2B18] text-[1.2vw] font-bold tracking-[-2px]  leading-[1.78vw">
                         Il settore cosmetico è guidato dalla scienza: a livello
                         europeo sono oltre 32mila gli scienziati costantemente
                         impegnati nella ricerca e nello sviluppo di cosmetici.
@@ -174,13 +174,13 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
                       <h3 className="text-[2.25vw] text-[#6B75A0] font-bold">
                         SICUREZZA
                       </h3>
-                      <p className="text-[#0A2B18] text-[1.35vw] font-bold tracking-[-2px]  leading-[1.78vw">
+                      <p className="text-[#0A2B18] text-[1.2vw] font-bold tracking-[-2px]  leading-[1.78vw">
                         In tutti i Paesi dell’Unione Europea i cosmetici devono
                         rispettare le norme del Regolamento 1223/2009 che
                         garantisce la sicurezza del consumatore. Il Regolamento
                         1223/2009 assicura un elevato livello di protezione
                         della salute del consumatore ed è preso a riferimento in
-                        moltissimi Paesi extra-UE
+                        moltissimi Paesi extra-UE.
                       </p>
                     </div>
                   </div>
@@ -197,7 +197,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
                       <h3 className="text-[2.25vw] text-[#6B75A0] font-bold">
                         INNOVAZIONE
                       </h3>
-                      <p className="text-[#0A2B18] text-[1.35vw] font-bold tracking-[-2px]  leading-[1.78vw">
+                      <p className="text-[#0A2B18] text-[1.2vw] font-bold tracking-[-2px]  leading-[1.78vw">
                         In Italia le imprese della cosmesi investono circa il 6%
                         del fatturato per l’innovazione e la tecnologia, la
                         ricerca e lo sviluppo, contro una media nazionale
@@ -208,12 +208,11 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
                       <h3 className="text-[2.25vw] text-[#6B75A0] font-bold">
                         EFFICACIA
                       </h3>
-                      <p className="text-[#0A2B18] text-[1.35vw] font-bold tracking-[-2px]  leading-[1.78vw]">
+                      <p className="text-[#0A2B18] text-[1.2vw] font-bold tracking-[-2px]  leading-[1.78vw]">
                         Il settore cosmetico deve rispettare una norma europea
                         specifica (Regolamento 655/2013) in materia di effetti
-                        vanatati dal prodotto, che devono essere conformi ad
+                        vantati dal prodotto, che devono essere conformi ad
                         alcuni criteri cardine, tra cui quello di essere
-                        comunicazione pubblicitaria. L’efficacia deve essere
                         dimostrati e documentati.
                       </p>
                     </div>
