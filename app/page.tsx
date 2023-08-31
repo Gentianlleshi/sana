@@ -69,7 +69,7 @@ function HomePage() {
             <button
               className="w-[38.45%] h-[37.5%] bg-[#0A2B18] rounded-se-[125px] rounded-es-[125px]"
               onClick={() =>
-                window.open("https://cosmileeurope.eu/inci/", "_blank")
+                window.open("https://cosmileeurope.eu/it/inci/", "_blank")
               }
             >
               <h2>COSMILE EUROPE</h2>

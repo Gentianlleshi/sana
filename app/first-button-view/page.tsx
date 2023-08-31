@@ -55,26 +55,26 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
       <div className="first-view-content flex  h-[calc(100vh-18vh)] items-center">
         <div className="tab-content h-full flex-[0_0_80%] flex justify-center">
           {activeTab === TabOption.Option1 && (
-            <div className="content-wrapper flex justify-evenly h-full items-center text-center font-semibold">
+            <div className="content-wrapper  flex justify-evenly h-full items-center text-center font-semibold gap-[50px]">
               <div className="max-w-[32.709vw]">
                 <h3 className="text-[2.09vw]">COSMETICA ITALIA</h3>
                 <p className="text-[1.56vw] mt-8">
                   Da oltre 50 anni Cosmetica Italia è la voce dell’industria
                   cosmetica nazionale. Riunisce oltre 640 imprese – dalle
                   multinazionali alle piccole e medie realtà produttive e
-                  distributive collocate sull’intero territorio nazionale –
-                  rappresentative del 90% del fatturato nazionale del settore.
+                  distributive collocate in tutto il Paese – rappresentative del
+                  90% del fatturato nazionale del settore.
                 </p>
               </div>
               <div className="max-w-[32.709vw]">
                 <h3 className="text-[2.09vw]">GRUPPO COSMETICI ERBORISTERIA</h3>
                 <p className="text-[1.56vw] mt-4">
-                  All’interno di Cosmetica Italia, il Gruppo Cosmetici
-                  Erboristeria riunisce oltre 60 aziende che non si limitano a
-                  identificare l’erboristeria come canale distributivo
-                  “storico”, ma soprattutto propongono un’offerta di prodotti
-                  particolarmente attenta ai temi della naturalità e della
-                  sostenibilità.
+                  Nel testo su GCEr modificare leggermente il testo come segue:
+                  Il Gruppo Cosmetici Erboristeria di Cosmetica Italia riunisce
+                  oltre 60 aziende che storicamente hanno identificato
+                  l’erboristeria come canale distributivo, ma soprattutto
+                  propongono un’offerta di prodotti particolarmente attenta ai
+                  temi della naturalità e della sostenibilità.
                 </p>
               </div>
             </div>
@@ -127,7 +127,7 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
                         67%
                       </h3>
                       <p className="text-[#0A2B18] text-[1.42vw] font-semibold tracking-[-2px]  leading-[1.78vw]">
-                        Make-up italiano consumato nel mondo
+                        Make-up italiano consumato nel mondo 25,1 MLD di euro
                       </p>
                     </li>
                     <li className="mt-4">
@@ -178,7 +178,10 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
                       <p className="text-[#0A2B18] text-[1.35vw] font-bold tracking-[-2px]  leading-[1.78vw">
                         In tutti i Paesi dell’Unione Europea i cosmetici devono
                         rispettare le norme del Regolamento 1223/2009 che
-                        garantisce la sicurezza del consumatore.
+                        garantisce la sicurezza del consumatore. Il Regolamento
+                        1223/2009 assicura un elevato livello di protezione
+                        della salute del consumatore ed è preso a riferimento in
+                        moltissimi Paesi extra-UE
                       </p>
                     </div>
                   </div>
@@ -207,11 +210,12 @@ const FirstButtonView: React.FC<FirstButtonViewProps> = ({ onGoHome }) => {
                         EFFICACIA
                       </h3>
                       <p className="text-[#0A2B18] text-[1.35vw] font-bold tracking-[-2px]  leading-[1.78vw]">
-                        Il settore cosmetico deve rispettare una legge europea
-                        specifica (Regolamento 655/2013) in materia di
+                        Il settore cosmetico deve rispettare una norma europea
+                        specifica (Regolamento 655/2013) in materia di effetti
+                        vanatati dal prodotto, che devono essere conformi ad
+                        alcuni criteri cardine, tra cui quello di essere
                         comunicazione pubblicitaria. L’efficacia deve essere
-                        dimostrata e i risultati di questa valutazione devono
-                        essere a disposizione delle autorità competenti.
+                        dimostrati e documentati.
                       </p>
                     </div>
                   </div>

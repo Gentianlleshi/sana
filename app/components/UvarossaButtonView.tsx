@@ -52,7 +52,7 @@ const UvarossaButtonView: React.FC<GoToSecondButtonViewProps> = ({
                 <div className="flex flex-col justify-center leading-[2vw] portrait:m-[20px] portrait:ml-0">
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white pb-[14px]">
                     <h3 className="text-white">Parte della pianta usata</h3>
-                    <h3 className="text-[#746686]">FIORE</h3>
+                    <h3 className="text-[#746686]">FOGLIE</h3>
                   </div>
                   <div className="text-[1.8vw] font-semibold px-[20px] border-b-2 border-white py-[14px]">
                     <h3 className="text-white">Tecnica di estrazione</h3>
